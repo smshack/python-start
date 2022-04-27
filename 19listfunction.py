@@ -45,3 +45,53 @@ print(numbers)
 
 numbers.reverse()
 print(numbers)
+
+# 리스트의 정보를 알아내는 함수
+# index(x) 전달 인자가 리스트 안에 있으면해당 요소의 인덱스 값을 반환, 전달 인자를 리스트에서 찾을 수 없다면 오류 발생
+# count(x) 리스트에있는 x 값의 개수를 반환
+
+numbers = [1, 6, 7, 3, 5, 6, 8, 3, 3]
+
+numbers.index(6)
+print(numbers)
+print(numbers.count(3))
+
+list1 = [2,5,2,0,1]
+list2 = [4,1,2]
+
+list1.append(list2)
+print(list1, len(list1))
+
+"""
+drawer = []
+drawer[0] = "양말"
+"""
+
+
+drawer = []
+drawer.append("양말")
+print(drawer, drawer[0])
+
+drawer = []
+
+drawer.append("양말")
+print(drawer, drawer[0])
+
+drawer.extend(["속옷", "모자", "반팔", "바지"])
+print(drawer)
+
+
+drawer = ["양말", "속옷", "모자", "반팔", "바지"]
+print(drawer)
+
+
+drawer = ["양말", "속옷", "모자", "반팔", "바지"]
+
+del drawer[3]
+print(drawer)
+
+drawer[3] = ""
+print(drawer)
+
+drawer[3] = "점퍼"
+print(drawer)
